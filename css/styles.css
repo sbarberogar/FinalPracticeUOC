@@ -1,0 +1,468 @@
+/*fuentes de google fonts para el proyecto*/
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Nunito+Sans:opsz@6..12&family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Nunito+Sans:opsz@6..12&family=Open+Sans:ital@1&family=Yellowtail&display=swap');
+
+
+
+body{
+    font-size: 16px; /*tamaño de la fuente*/
+    margin: 0;
+
+}
+.contenedor {
+    width: 80%; /* espació a ocupar */
+    max-width: 1170px; /* máximo de ancho permitido al contenido pagina*/
+    margin:0 auto;
+   }
+  
+
+.main { /* aspectos más genericos del contenido*/
+    
+    margin: 0 auto;
+    font-family: 'Nunito Sans', Verdana, Tahoma, sans-serif; /* tipografia*/
+}
+
+
+h1{ /*formato para todos los elementos h1*/
+    font-size: 90px;
+    font-family: Yellowtail, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+h2{
+    font-size: 40px;
+    font-family: Yellowtail, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #C43721 ;
+    text-transform: uppercase; /*convertir texto a mayusculas*/
+    letter-spacing: 0.15em; /* espacio entre las letras*/
+    word-spacing: 0.25em; /* espacio entre la palabras*/
+}
+
+h3 h4{
+   font-size: 25px ; 
+   font-family: Yellowtail, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h5{
+    font-size: 20px ;
+}
+
+a:hover{
+
+}
+    .button a{ /*quitar el estilo por defecto de los enlaces*/
+        border: solid 1px #C43721;
+        text-decoration: none;
+        color: #C43721 ;
+        padding: 0.5rem 1rem;
+        transition: all 0.4s linear; /* efecto de relentizar el cambio de un efecto al siguiente*/
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+    }
+        .button a:focus { color:#e4e4e4; background-color:  #C43721; }
+        .button a:hover { color:#e4e4e4; background-color: #C43721 ;}
+
+        .morearticles div.button { display: flex; align-items: center;}
+
+.button { /* extilo generico, para todos los elemtos con la clase button*/
+    color: #C43721 ;
+    text-transform: uppercase; /*convertir texto a mayusculas*/
+}
+
+.fix-header { /*contenido en la  cabecera*/
+    color: #C43721; /*color de la letra*/
+    text-decoration: none; /* quitar estilo que tiene por defecto*/
+    padding: 1.5rem 0;
+    background-color: rgba(228, 228, 228, 0.65);
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    
+}
+    .fix-header a { /*enleces contenidos en elemento 'a' dentro de la cabecera*/
+    color: rgb(138, 11, 11); /*color de la letra*/
+    text-decoration: none; /* quitar estilo que tiene por defecto*/
+    }
+
+    .container-logo { /*logotipo del menú de cabecera*/
+        display: flex; /*permitir contenido al lado, evitar salto de linea*/
+        justify-content: space-evenly; /*coloca los items uno a cada lado y aprovecha todo el ancho*/
+        align-items: center; /*centrar los items */
+        flex-wrap: wrap; /*evitar comportamiento indicado en el media query, permitiendo que se coloque justo debajo del logo */ 
+    }
+        .container-logo img{ /* retoques del logo en el menú superior*/
+
+        }
+        .nav-menu {
+            margin: 0;
+            padding: 0;
+        }
+            .nav-menu ul { /* quitamos los espaciós y decoraciones por defecto de los elementos 'ul' hijos del elemento 'nav', clase '.nav-menu*/
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                list-style: none;
+            }
+                .nav-menu ul li {
+                    display: inline-block;
+                }
+                    .nav-menu ul li a { /* estilo que se aplica a todos los elementos 'a' hijos del elemento 'li' que cuelgan de la clase '.nav-menu'*/
+                        display: block;
+                        padding: 0.5rem 1rem;
+                        transition: all 0.4s linear; /* muestra otro tono al pasar clicar con el ratón encima*/
+                        border-radius: 6px;
+                    }   
+                    .nav-menu ul li a:hover {
+                        background-color: #ccc;
+                    }
+
+
+/*apartado responsive, comportamiento en pantalla para dispositivo movil*/
+@media only screen and (max-width: 768px) { /*media query para que llegado a ese ancho (=ancho ipad) su comportamiento sea distinto*/
+
+    .nav-menu {
+        width: 100%;
+        margin-top: 1rem;
+    }    
+        .nav-menu ul li {
+            display: block;
+        }
+            .nav-menu ul li a {
+                display: block;
+                padding: 0.5rem 0;
+                transition: all 0.4s linear;
+                border-radius: 6px;
+            }
+}
+
+.main { /*damos el espació que ocupa la cabecera*/
+    padding-top: 6rem;
+}
+
+/* estilo para la cabecera de presentación, banner */
+.banner  { /*imagen de fondo de la cabecera*/
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e4e4;
+ }
+ .index{
+ background-image:url("../images/header.jpg");
+ }
+ .multi{
+    background-image:url("../images/inner_header.jpg");
+ }
+     .index-banner-adit{     
+        color:#C1C2C4;
+        background-color: rgb(103, 103, 103, 0.45);
+        border-radius: 6px;
+        padding: 0.5em;
+        text-align: center;
+    }
+        .index-banner-adit h1{
+            padding: 0 2px;
+            font-weight:bold;
+            display: flex;
+        }
+
+ /* extilos para el apartado de la sección works, en el index-page */ 
+ 
+.works{ padding: 3% 0;} 
+.title-works{
+    text-transform: uppercase; /*convertir texto a mayusculas*/
+    margin: 3% 0;
+    font-size: 50px;
+    font-family: Yellowtail, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+} 
+
+.letrasrojas{
+    color: #C43721 ;
+}
+.worksgallery{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+    grid-gap: 10px;
+}
+
+    .box{
+        text-align: center; 
+    }
+        .box figure{
+            margin: 0;;
+            text-align: center; 
+        }
+
+        .box img{    
+            width: 250px;
+            object-fit: cover;
+            border-radius: 5%;
+        }   
+
+
+/* estilo sección blog, del index*/
+.blog {
+    background-color:#e4e4e4;
+    padding: 1%;
+}
+
+    .morearticles { display: flex; justify-content: space-between;}
+    
+    .blogarticles{
+        list-style: none;
+        display: flex;
+        flex-flow: row wrap; /* para que los articulos se muestren uno debajo del otro*/
+        padding: 0; /* elminar padding por defecto del elemento ul*/
+    }
+
+        .blogarticles li article{
+            display: flex
+        }
+        /* seleccionamos el primer y sedundo elemento li hijo de elemento con la clase 'blogarticles'*/
+        .blogarticles li:nth-child(-n+2){ border-bottom: solid 2px white;}
+        
+        .blogarticles img{ margin: 2%;  }
+        
+            .blogarticles h3{
+                color: #C43721;
+            }
+
+ 
+/*sección uloking, tercera sección del index blacksection*/
+
+.unloking{
+    background-color: black;
+    color: #e4e4e4;
+    padding: 20px 0;
+}
+
+/*sección aboutme, cuarta sección del index */
+.aboutme{
+    margin-bottom: 2% ;
+}
+    .aboutme div{
+        display: grid; /*para dividir el contenino en 2*/
+    }
+        .Crafting{ /*indicamos que sera el contenido de la primiera columna*/
+            display: block; /*evitamos la herencia del padre*/
+            grid-column: 1;  /*indicamos que sera el contenido de la primiera columna*/
+            margin-right: 3%;  /* para separar el contenido por ese lado */
+        }
+            .Crafting p{
+                padding: 0;
+            }
+        .fotocrafting {
+            grid-column: 2; /* indicamos que sera el contenido de la segunda columna*/
+            align-items: end; /* colocar el contenido al final*/
+            margin-left: 2%; /* para separar el contenido */
+        }
+    .aboutme img{
+        border-radius: 50%; /* redondeamos la foto */
+    }
+
+/* sección team, cuarta sección del index*/
+
+.team{
+    background-color: #e4e4e4;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+    .teamboxcontainer {
+        display: grid;
+        grid-template-columns: repeat(4, 4fr);
+        grid-gap: 5px;
+    }
+        .teambox figure{ margin: 0;}
+        .teambox figcaption p { margin:0; }
+        .teambox figcaption h4{ margin:0; }
+        .teamboxphoto img{
+            width: 270px;
+            object-fit: cover;
+            border-radius: 5%;
+        }
+
+  /* pagina multifaceted, */
+.table {
+    margin-bottom: 3%; /* separar la tabla del footer*/
+}
+        /* multifaceted, estilo de la tabla*/
+        table {
+            font-style: italic;
+            table-layout: fixed; /* para que mantenga la proporción de la tabla*/
+            width: 100%;
+            border-collapse: collapse; /* unir la posible separación de las lineas entre las diferentes celdas*/
+            border-bottom: 2px solid black; /* separo los bordes para evitar el izquierdo que no se muestra en la foto*/
+            border-top: 2px solid black;
+            border-right: 2px solid black;
+          }
+            thead th { 
+                background-color: #C43721;
+                color:#e4e4e4;
+                height: 40px;
+                
+            }
+            th{ 
+                background-color: #ffd6d1;
+            }
+
+            tbody tr:nth-child(even) {
+                background-color: #e4e4e4;
+              }
+
+
+/* página web - desing*/
+/* primer apartado página web - desing clase experience*/
+.experience {
+    background-color: #719ECE;
+    margin: 0;
+}
+    .article-experience { /*indicamos que sera el contenido de la primiera columna*/
+    }
+    .foto-experience {
+        float: right;
+        align-items: end; /* colocar el contenido al final*/
+    }
+        .foto-experience img{
+            width: 350px;
+        }
+
+    .comillas{
+        border-left: solid 3px #C43721;
+        background-color: #fff6f5;
+        margin: 0 35px ;
+    
+    }   
+    /* centar las comillas con el contenido de la cita*/
+    .comillas blockquote{display: flex; align-items: center;}
+    .comillas blockquote::before{
+            text-align: center;
+            content: open-quote; 
+            font-size: 56px;
+    }
+        /*insercion de icono de bombilla delante del elemento li*/
+        .bombillas ul { list-style: none; }
+            .bombillas ul li::before {
+                font-family:"Font Awesome 6 Brands";
+                content:"" url(../fontawesome/svgs/regular/lightbulb-regular.svg); /* sustituir por icono de bombilla*/ 
+                margin-right:8px; 
+            }
+
+
+            .contenedor {
+                overflow: hidden; /* Clearfix para manejar floats */
+              }
+              
+              aside {
+                float: right;
+                width: 25%; /* Ancho del aside */
+                /* Otros estilos para el aside */
+              }
+              
+              main {
+                width: 75%; /* Ancho del main */
+                /* Otros estilos para el main */
+              }
+              
+
+
+.footer {
+    background-color: #323639;
+    padding: 2% 0;
+
+    color:#C1C2C4;
+}
+    .footer_1{
+        max-width: 1170px; /* máximo de ancho permitido al contenido pagina*/
+        margin: 0 auto; /*eliminar margenes que aplica por defecto el navegador*/
+        display: flex;   
+
+        justify-content: space-around;
+        text-align: left;
+    }
+        .foot{
+            
+            width: 30%;
+        }
+            .foot ul{
+                padding-left: 0%;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+            
+            }
+                .foot ul li{ /*colocar la lista de iconos de redes socilaes en horizontal*/
+                    list-style: none;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 2%;
+                    font-size: 1.5rem ;
+                    color:#C1C2C4;
+                }
+                    /* asignar ul color a cada uno de los enlaces a redes sociales*/
+                    .foot ul li:nth-child(1) { background-color:   #EA4C89; }
+                    .foot ul li:nth-child(2) { background-color:   #3B5998; }
+                    .foot ul li:nth-child(3) { background-color:   #DB4A39; }
+                    .foot ul li:nth-child(4) { background-color:   #0E76A8; }
+                    .foot ul li:nth-child(5) { background-color:   #00ACEE; }
+                    .foot ul li:nth-child(6) { background-color:   #4E658E; }
+                    /*comportamiento de los enlaces de redes sociales*/
+                    .foot ul li a:link{ color:#C1C2C4;   } /*estado predeterminado*/
+                    .foot ul li a:visited{ color:#C1C2C4;   } /* enlace ya visitado*/
+                    .foot ul li a:hover{ color:#C1C2C4;   }  /*enlace cursor por encima*/
+                    .foot ul li a:focus{ color:#C1C2C4;   }  /*cuando tiene el foco*/
+                    .foot ul li a:active{ color: #C1C2C4;   } /*cuando se activa el enlace*/
+                    /* tambien se puede her lo mismo .foo ul li a:link, a:visited, a:hover, a:focus, a:active{ color:#C1C2C4; } y funcionan igual*/
+
+            .foot-imgofday{
+                margin: 0;
+                display: grid;
+                grid-template-columns: repeat(3, 3fr);
+                grid-gap: 4px;
+            }
+                .imgofday img{
+                    width: 100%;
+                }
+            .formulario{
+                width: 100%;
+                display: flex;
+                                
+            }
+            
+            .formulario input[type="text"] {
+                margin-bottom: 15px;
+                height: 30px;
+                background-color: #829DA2;
+            }  
+            .formulario input[type="email"]{
+                margin-bottom: 15px;
+                height: 30px;
+                background-color: #829DA2;
+            }
+                .formulario input:focus{
+                    outline-color:  #C1C2C4;
+                    border-color:  #323639;
+                    box-shadow: 0 0 10px #719ECE;
+                }  
+                
+            .formulario input[type="submit"]{
+                width: 100%;
+                height: 40px;
+                border-color: #C1C2C4 ;
+                background-color: #323639 ;
+                color:#f5f5f5;
+                justify-content: center;
+            }
+
+
+    .footer_2{
+        max-width: 1170px; /* máximo de ancho permitido al contenido pagina*/
+        margin: 0 auto; /*eliminar margenes que aplica por defecto el navegador*/
+        display: flex;
+        justify-content: space-around;
+        border-top: solid 1px white;
+        line-height: 0.5em;
+    }
