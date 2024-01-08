@@ -1,0 +1,276 @@
+<!DOCTYPE html> <!-- declaración tipo HTML, HTML5 -->
+<html lang="en">  <!-- declaración idioma -->
+
+    <head>
+        <!-- declaración tipo de codificación -->
+        <meta charset="UTF-8">
+        <!-- declaración de dimensiones y escala, ancho inicial = ancho del dispositivo, no >  inicial-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <!-- declaración para explorer, no uso de anteriores versiones -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- declaración descriptiva de la pagina -->
+        <meta name="description" content="Esperiences and Design. My Design Portfolio">
+        <!-- declaración de palabras clave para los buscadores -->
+        <meta name="keywords" content="Designer, Art, Blog, Portfolio, Creativity ">
+         <!-- título a mostrar en la pestaña del navegador -->
+        <title> You are on my web-design</title>
+         <!-- icono para la pestaña, se mostrará al lado del título -->
+        <link rel="icon" href="images/favicon.ico">
+         <!-- declaración para insertar nuestra hoja de estilo -->
+        <link rel="stylesheet" href="css/styles.css">
+         <!-- declaración para insertar los iconos descargados de la web font awesome -->
+        <link href="fontawesome/css/all.min.css" rel="stylesheet">
+    </head>
+    <!--cuerpo de nuestra web-->
+    <body>
+        <header class="fix-header"> <!-- Menú de la cabecera -->
+            <div class="contenido container-logo">
+                <a href="index.html" alt="redirection to index page">
+                    <img src="images/favicon.ico" title="web logo" id="index"/>
+                </a>
+                <nav class="nav-menu">
+                    <ul class="menu">
+                        <li><a href="index.html" title="Web index" aria-label="Redirection URL to homepage" >HOME</a></li>
+                        <li><a href="multifaceted.html" target="_blank" title="multifaceted website" aria-label="Redirection URL to multifaceted page">MULTIFACETED</a></li>
+                        <li><a href="#" title="multifaceted website" aria-label="Redirection URL to pricing page"> PRICING </a></li>
+                        <li><a href="#" title="multifaceted website" aria-label="Redirection URL to blog page">BLOG</a></li>
+                        <li><a href="#" title="multifaceted website" aria-label="Redirection to contact section">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+        <main class="main">  
+            <div class="banner index"> <!--foto superior de entrada a la web-->
+                <div class="index-banner-adit">
+                    <h1> Adit Sanika Namrata </h1> 
+                    <p> My work as a designer.</p> 
+                </div>
+            </div> <!-- Cabecera de presentación común en las 3 páginas, con diferente foto fondo-->
+            <section class="works" id="works">
+                <div class="contenedor">
+                     <!-- Primera sección de la página index con fondo blanco-->    
+                    <h2> Experiences and design </h2>
+                    <h3 class="title-works"> works </h3>
+                    <p> Welcome to <strong class="letrasrojas"> My Design Portfolio.</strong> Elevate your digital experience with my creative design solutions. Explore a world where aesthetics meet functionality, where innovation and imagination converge. </p>
+                    <p> I'm passionate about crafting captivating visuals and seamless user interfaces that leave a lasting impression. Dive into my portfolio to discover the fusion of art and technology, and let's embark on a journey of design excellence together. </p>
+                    <div class="worksgallery">
+                        <div class="box">
+                            <figure>
+                                <img src="images/img_1.jpg" alt=" a programming person" />
+                                <h4>Programming</h4>
+                                <p>Here you can see some of my programming work </p>
+                                <p><div class="button"><a href="#">More Details</a></div> </p>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/img_2.jpg" alt=" Colors"/>
+                                <h4>Web layout</h4>
+                                <p> Here you can see some of my work as a web designer</p>
+                                <p><div class="button"><a href="#">More Details</a></div> </p>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/img_3.jpg" alt="Desing selection"/>
+                                <h4>Desing</h4>
+                                <p> Here you can see some of my work as a designer</p>
+                                <p><div class="button"><a href="#">More Details</a></div> </p>
+                            </figure>
+                        </div>
+                        <div class="box">
+                            <figure>
+                                <img src="images/img_4.jpg" alt="Fish picture"/>
+                                <h4>Painting</h4>
+                                <p> Here you can see some of my work as a painter </p>
+                                <p><div class="button"><a href="#">More Details</a></div> </p>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="blog" id="blog"> <!-- Segunda sección de la página index con fondo gris-->  
+                <div class="contenedor">
+                        <div class="morearticles">
+                        <h2>Latest from our Blog</h2>
+                        <div class="button"><a href="#">More articles</a></div>  
+                    </div>
+                    <ul class="blogarticles">
+                        <li>
+                            <article> 
+                                <img src="images/blog_1.jpg" alt="four girls backlit showing a black outline" title="sombra de 4 muejers sobre fondo de atardecer, en diferentes posiciones"/>
+                                <div>
+                                    <h3>Web Design: Shaping the Digital Experience </h3>
+                                    <p>Web design, or WD, is the art and science of creating engaging and user-friendly websites. In today's fast-paced digital world, a well-designed website is like a virtual storefront, attracting visitors and converting them into customers. <strong class="letrasrojas">Read more... </strong></p>
+                                </div>
+                            </article>
+                        </li>
+                        <li>
+                            <article>  
+                                <div>
+                                    <h3> 22 inspiring web design trends for 2022  </h3>
+                                    <!--"&rsquo;" utilizo la codificación para evitar errores con la comilla superior-->
+                                    <p>We&rsquo;re a bit biased here but we&rsquo;re still thankful for this comprehensive look at upcoming web design trends! This article covers a variety of design styles that ... <strong class="letrasrojas"> Read more... </strong>  </p>
+                                </div>
+                                <img src="images/blog_2.jpg" alt="Man running at sunset" title="sombra de corredor sobre fondo de atardecer"/>
+                            </article>
+                        </li>
+                        <li>
+                            <article> 
+                                <img src="images/blog_3.jpg" alt="Girl watching the sunset" title="sombra de 4 muejers sobre fondo de atardecer, en diferentes posiciones"/>
+                                <div>
+                                    <h3> Break the Internet: The Rising Popularity of Glitch Art   </h3>
+                                    <p>Author Ben Barnhart breaks down the defining characteristics of glitch art, sharing examples of elements like pixelation, light leaks, and color degradation. <strong class="letrasrojas">Read more... </strong></p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>  
+                </div>
+            </section>
+              
+            <section class="unloking" id="unloking"> <!-- Tercera sección de la página index con fondo negro-->  
+                <div class="contenedor">
+                    <h2> Unlocking Creativity, One Pixel at a Time </h2>
+                    <div class="blacksection">
+                        <p>In a digital landscape where first impressions matter, my designs are your gateway to success. Each pixel is meticulously placed to convey your brand's story, and every color choice is a strategic brushstroke.</p>
+                        <p>With a keen eye for detail and a commitment to excellence, I'm here to turn your vision into reality. Let's create designs that not only resonate but also inspire action.</p>
+                    </div>        
+                </div>
+            </section>
+            
+            <section class="aboutme"> <!-- Cuarta sección de la página index con fondo gris claro justo debajo del fondo negro central-->  
+                <div class="contenedor">
+                    <h2>About Me: <span style="color: black; font-size: smaller;"> Crafting Visual Experiences </span>  </h2><!-- color diferente y tamaño más pequeño-->
+                    <div class="aboutme2">
+                        <div class="Crafting">
+                            <h3>Adit Sanika Namrata </h3>
+                            <p>About Me: Crafting Visual Experiences </p>
+                            <p>As a designer, my mission is to breathe life into ideas through the art of visual storytelling.</p>
+                            <p>With a passion for creativity and a commitment to precision, I thrive on transforming concepts into eye-catching designs that resonate with audiences.</p>
+                            <p>Whether it's crafting elegant user interfaces or conceptualizing captivating branding, I'm dedicated to pushing the boundaries of design to create memorable and impactful experiences.</p>
+                        </div>
+
+                        <div class="fotocrafting">
+                            <img src="images/profile.jpg" title="Adit Sanika picture "/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="team"> <!-- Quinta sección de la página index con fondo gris fotos del equipo colaborador--> 
+                <div class=" contenedor">
+                    <h2>My Help team </h2>
+                    <div class="teamboxcontainer">
+                        <div class="teambox">
+                            <figure> <!-- añado al elemento div un atributo class para poder editar las fotos del equipo al mismo tiempo --> 
+                                <div class="teamboxphoto"><img src="images/team_1.jpg" alt="Joana Beach"/> </div>
+                                <figcaption>
+                                    <h4>Joana Beach</h4>
+                                    <p> Senior Software Engineer </p>
+                                </figcaption>
+                            </figure>
+                        </div>  
+                        <div class="teambox">
+                            <figure>
+                                <div class="teamboxphoto"><img src="images/team_2.jpg" alt="Jhon Deep"/> </div>
+                                <figcaption>
+                                    <h4>Jhon Deep</h4>
+                                    <p> SEO specialist </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="teambox">
+                            <figure>
+                                <div class="teamboxphoto"><img src="images/team_3.jpg" alt="Juan Sanchez"/> </div>
+                                <figcaption>
+                                    <h4>Juan Sanchez</h4>
+                                    <p> Web seller </p>
+                                </figcaption>
+                            </figure>
+                        </div>   
+                        <div class="teambox">
+                            <figure>
+                                <div class="teamboxphoto"><img src="images/team_4.jpg" alt="Ramia Nadjela"/> </div>
+                                <figcaption>
+                                    <h4>Ramia Nadjela</h4>
+                                    <p> Layaut specialist </p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>        
+        </main>
+
+        <footer class="footer">  <!-- sección final de la página index, el footer --> 
+            <section class="footer_1">
+                <div class="foot">
+                    <h5>My social networks </h5>
+                    <p> Lorem ipsum dolor sit amet consectetur adipiscing elit porttitor turpis, nullam congue convallis montes purus class tristique mollis velit, posuere libero netus sodales dictum habitasse cubilia odio. </p>
+                    <p> Lectus fermentum mattis eu blandit iaculis ullamcorper tristique senectus consequat montes a ridiculus elementum natoque habitasse, volutpat sem cum porta auctor vitae nisl magnis dignissim aenean nascetur nibh mauris... [&#8594;]</p>
+                    <nav class="socialnet">
+                        <ul>
+                            <li><a title="dribbble" href="https://dribbble.com/" target="_blank" ><i class="fa-brands fa-dribbble"></i></a></li>
+                            <li><a title="facebook" href="https://www.facebook.com/" target="_blank" ><i class="fa-brands fa-facebook"></i></i></a></li>
+                            <li><a title="googleplus" target="_blank" href="https://workspaceupdates.googleblog.com/2023/04/new-community-features-for-google-chat-and-an-update-currents%20.html"><i class="fa-brands fa-square-google-plus"></i></a></li>
+                            <li><a title="linkedin-in" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i><i class="fa-brands fa-linkedin-in"></i></a></li>
+                            <li><a title="twitter"  target="_blank" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a title="VK" target="_blank" href="https://vk.com/"> <i class="fa-brands fa-vk"></i> </a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="foot">
+                    <h5>Email newsletter</h5>
+                    <p> Sign up for our email newsletter to find out all the news.</p>
+                    <form action="/my-handling-form-page" method="post">
+                        <div class="formulario">
+                            <label for="name"></label>
+                            <input class="formulario" type="text" id="name" placeholder="Name" />
+                        </div>
+                        <div class="formulario">
+                            <label for="email-foot"></label>
+                            <input class="formulario" type="email" id="email-foot" placeholder="Email" />
+                        </div>
+                        <div class="formulario">
+                            <input type="submit" value="Enviar" class="submit-btn-foot formulario" />
+                        </div>
+                    </form>
+                </div>
+                <div class="foot">
+                    <h5>Images of the day</h5>
+                    <figure class="foot-imgofday">
+                        <div class="imgofday"><img src="images/footer/footer_1.jpg" alt="ocean picture" /> </div>
+                        <div class="imgofday"><img src="images/footer/footer_2.jpg" alt="lavender flowers picture"/> </div>
+                        <div class="imgofday"><img src="images/footer/footer_3.jpg" alt="workoffice table picture" /> </div>
+                        <div class="imgofday"><img src="images/footer/footer_4.jpg" alt="forest" /> </div>
+                        <div class="imgofday"><img src="images/footer/footer_5.jpg" alt="plants"/> </div>
+                        <div class="imgofday"><img src="images/footer/footer_6.jpg" alt="connection"/> </div>
+                        <div class="imgofday"><img src="images/footer/footer_7.jpg" alt="gras"/> </div>
+                        <div class="imgofday"><img src="images/footer/footer_8.jpg" alt="building"/> </div>
+                        <div class="imgofday"><img src="images/footer/footer_9.jpg" alt="dusk"/> </div>
+                    </figure>
+                </div>
+            </section>
+            <section class="footer_2">
+                <div class="final_foot">
+                    <p> <i class="fas fa-phone"></i> Give us a call: </p>
+                    <p> <i class="phone"></i> +00 (123) 765 8765</p>
+
+                </div>
+                <div class="final_foot">
+                    <p><i class="fas fa-envelope"></i> Send us a mail: </p>
+                    <p><a href="mailto:myName@domain.com"> myName@domain.com </a> </p>
+                </div>
+                <div class="final_foot"> 
+                    <p> <i class="fas fa-clock"></i> Monday - Saturday: </p>
+                    <p> 14.00am - 18.00pm </p>
+                </div>
+                <div class="final_foot">
+                    <p> <i class="fa fa-map-marker"> </i> Come visit us:</p> 
+                    <p><a href="https://maps.app.goo.gl/SApgwNESRv1hnCyY8" target="_blank" aria-label="Redirection to google maps"> Directions to my location</a></p>
+                </div>
+           </section>    
+        </footer>
+    </body>
+</html>
